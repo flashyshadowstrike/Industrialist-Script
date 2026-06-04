@@ -7,7 +7,7 @@
                          /____/                                         
 ]]
 
-local BASE_URL = "raw.githubusercontent.com/flashyshadowstrike/Flashy-Hub/main/Scripts/"
+local BASE_URL = "https://raw.githubusercontent.com/flashyshadowstrike/Flashy-Hub/main/Scripts/"
 
 local GAME_MAP = {
     
