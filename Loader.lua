@@ -59,6 +59,8 @@ end
 
 print(("[Loader] Detected: %s (PlaceId %d) → loading %s"):format(gameName, placeId, target))
 
+task.wait(1)
+
 local url = BASE_URL .. target
 local ok, result = pcall(function()
     return loadstring(game:HttpGet(url, true))()
