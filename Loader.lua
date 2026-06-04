@@ -7,15 +7,12 @@
                          /____/                                         
 ]]
 
-local BASE_URL = "https://github.com/flashyshadowstrike/Flashy-Hub/tree/main/Scripts"
+local BASE_URL = "raw.githubusercontent.com/flashyshadowstrike/Flashy-Hub/main/Scripts/"
 
 local GAME_MAP = {
-    -- [PlaceId] = "ScriptFileName.lua"
-
-    -- Sell Lemons
+    
     [79268393072444] = "SellLemons.lua",
 
-    -- Industrialist
     [9192423027] = "Industrialist.lua",
 }
 
