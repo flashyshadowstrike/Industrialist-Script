@@ -1,11 +1,14 @@
--- Flashy Studios Loader
--- Detects the current game by PlaceId and loads the matching script.
--- Hosted scripts are fetched from BASE_URL; edit the map below to add games.
+--[[
+    ________           __             _____ __            ___           
+   / ____/ /___ ______/ /_  __  __   / ___// /___  ______/ (_)___  _____
+  / /_  / / __ `/ ___/ __ \/ / / /   \__ \/ __/ / / / __  / / __ \/ ___/
+ / __/ / / /_/ (__  ) / / / /_/ /   ___/ / /_/ /_/ / /_/ / / /_/ (__  )  
+/_/   /_/\__,_/____/_/ /_/\__, /   /____/\__/\__,_/\__,_/_/\____/____/  
+                         /____/                                         
+]]
 
 local BASE_URL = "https://github.com/flashyshadowstrike/Flashy-Hub/tree/main/Scripts"
 
--- PlaceId → script filename mapping
--- To find a game's PlaceId: open it in Roblox Studio or check the URL on roblox.com/games/<PlaceId>
 local GAME_MAP = {
     -- [PlaceId] = "ScriptFileName.lua"
 
@@ -15,10 +18,6 @@ local GAME_MAP = {
     -- Industrialist
     [9192423027] = "Industrialist.lua",
 }
-
--- ────────────────────────────────────────────────────────────────
--- Runtime
--- ────────────────────────────────────────────────────────────────
 
 local Fluent = loadstring(game:HttpGet(
     "https://github.com/StyearX/Fluent-Modded/releases/download/Fluent/FluentPro"
@@ -33,7 +32,6 @@ local gameName = (okInfo and info and info.Name) or "Unknown Game"
 local target = GAME_MAP[placeId]
 
 if not target then
-    -- Show unsupported-game dialog via Fluent
     local Window = Fluent:CreateWindow({
         Title    = "Flashy Studios Loader",
         SubTitle = "by Flashy Studios",
