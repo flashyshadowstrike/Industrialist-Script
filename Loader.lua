@@ -2,7 +2,7 @@
 -- Detects the current game by PlaceId and loads the matching script.
 -- Hosted scripts are fetched from BASE_URL; edit the map below to add games.
 
-local BASE_URL = "https://raw.githubusercontent.com/YourUser/YourRepo/main/Roblox%20Scripts/"
+local BASE_URL = "https://github.com/flashyshadowstrike/Flashy-Hub/tree/main/Scripts"
 
 -- PlaceId → script filename mapping
 -- To find a game's PlaceId: open it in Roblox Studio or check the URL on roblox.com/games/<PlaceId>
@@ -10,13 +10,10 @@ local GAME_MAP = {
     -- [PlaceId] = "ScriptFileName.lua"
 
     -- Sell Lemons
-    -- [000000000] = "SellLemonsScript.lua",
+    [79268393072444] = "SellLemons.lua",
 
     -- Industrialist
-    -- [000000000] = "IndustrialistScript.lua",
-
-    -- Add more games here:
-    -- [PlaceId]  = "ScriptFileName.lua",
+    [9192423027] = "Industrialist.lua",
 }
 
 -- ────────────────────────────────────────────────────────────────
